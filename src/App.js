@@ -46,11 +46,17 @@ const App = () => {
 
   console.log('window object', window);
   return (
-    <div className='container mt-5 '>
+    <div className='container mt-4 '>
+      <h4 className=' mb-4 title '>
+        <i class='fa fa-hand-o-right pr-3 text-warning' aria-hidden='true'></i>
+        Drop a Marker and see (public) images that have been taken at that
+        location{' '}
+      </h4>
       <div id='map' className='mb-4'></div>
       <Gallary lat={lat} lon={lng} />
       <footer className='text-warning text-center mb-3'>
-        Made by Mohit Singh Negi
+        Made by Mohit Singh Negi with{' '}
+        <i class='fa fa-heart text-danger' aria-hidden='true'></i>
       </footer>
     </div>
   );
