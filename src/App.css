@@ -1,5 +1,10 @@
+/* App.js */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body {
   background-color: #13273b;
+  font-family: 'Roboto', sans-serif;
 }
 .title {
   color: #27ad36;
@@ -71,4 +76,21 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+input {
+  width: 450px;
+  margin-bottom: 20px;
+  line-height: 54px;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+  .star-button {
+    margin-bottom: 40px !important;
+    padding-left: 10px;
+  }
 }

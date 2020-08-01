@@ -16,35 +16,35 @@ const Gallary = ({ lat, lon }) => {
   const [totalPics, setTotalPics] = useState(0);
   const [imgeType, setImageType] = useState('');
 
+  //this use Effect will get executed if latitude or longitude or current page number change
   useEffect(() => {
     const fetchPics = async () => {
       setLoading(true);
+
       try {
         let res = await axios.get(
           `${BASE_URL}?method=flickr.photos.search&api_key=${API_KEY}&lat=${lat}&lon=${lon}&format=json&page=${currentPage}`
         );
         //   console.log(JSON.parse(res.data.slice(14, -1)));
         res = JSON.parse(res.data.slice(14, -1));
-        console.log(res);
+
+        //set pics details
         setPageNo(res.photos.page);
         setTotalPages(res.photos.pages);
         setPicsPerPage(res.photos.perpage);
         setPics(res.photos.photo);
         setTotalPics(res.photos.total);
+
         setLoading(false);
       } catch (e) {
         console.log('Something Went Wrong!');
+        setPics([]);
+        setLoading(false);
       }
     };
 
     fetchPics();
   }, [currentPage, lat, lon]);
-
-  console.log(pics);
-
-  //   Get current posts
-
-  console.log(pageNo, totalPages, picsPerPage);
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
@@ -54,8 +54,7 @@ const Gallary = ({ lat, lon }) => {
   return (
     <div>
       <div className='info-table ml-2'>
-        {/* <h1 className=' mb-3 title'>Gallary </h1> */}
-        <h6 className='text-white'>
+        <h6 className='text-white mb-3'>
           {!loading && `Showing Results for lat ${lat} lon ${lon}`}
         </h6>
         <PicType setImageType={setImageType} />
