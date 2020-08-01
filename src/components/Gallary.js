@@ -36,7 +36,7 @@ const Gallary = ({ lat, lon }) => {
     };
 
     fetchPics();
-  }, [currentPage]);
+  }, [currentPage, lat, lon]);
 
   console.log(pics);
 
