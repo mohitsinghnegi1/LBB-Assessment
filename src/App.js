@@ -49,6 +49,9 @@ const App = () => {
     <div className='container mt-5 '>
       <div id='map' className='mb-4'></div>
       <Gallary lat={lat} lon={lng} />
+      <footer className='text-warning text-center mb-3'>
+        Made by Mohit Singh Negi
+      </footer>
     </div>
   );
 };

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Pics from './Pics';
 import Pagination from './Pagination';
 import axios from 'axios';
+import { API_KEY } from '../config';
+import { BASE_URL } from '../constants';
 import PicType from './PicType';
 
 const Gallary = ({ lat, lon }) => {
@@ -19,7 +21,7 @@ const Gallary = ({ lat, lon }) => {
       setLoading(true);
       try {
         let res = await axios.get(
-          `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=730e44bd7af4edcc117dd2f6198a9ebf&lat=${lat}&lon=${lon}&format=json&page=${currentPage}`
+          `${BASE_URL}?method=flickr.photos.search&api_key=${API_KEY}&lat=${lat}&lon=${lon}&format=json&page=${currentPage}`
         );
         //   console.log(JSON.parse(res.data.slice(14, -1)));
         res = JSON.parse(res.data.slice(14, -1));
@@ -44,23 +46,25 @@ const Gallary = ({ lat, lon }) => {
 
   console.log(pageNo, totalPages, picsPerPage);
 
-  //   const indexOfLastPic = currentPage * picsPerPage;
-  //   const indexOfFirstPic = indexOfLastPic - picsPerPage;
-  //   const currentPics = pics.slice(indexOfFirstPic, indexOfLastPic);
-
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  console.log('count ', pics.length);
 
   return (
     <div>
       <div className='info-table ml-2'>
-        <h1 className=' mb-3 title'>Gallary </h1>
+        {/* <h1 className=' mb-3 title'>Gallary </h1> */}
         <h6 className='text-white'>
           {!loading && `Showing Results for lat ${lat} lon ${lon}`}
         </h6>
         <PicType setImageType={setImageType} />
       </div>
       <hr className='hr'></hr>
+
+      <p className='text-white'>
+        {!loading && pics.length == 0 && `No Result Found!!`}
+      </p>
       <Pics pics={pics} loading={loading} imageType={imgeType} />
       {!loading && (
         <Pagination
