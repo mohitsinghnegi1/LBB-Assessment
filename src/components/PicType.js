@@ -26,11 +26,11 @@ const PicType = ({ setImageType }) => {
         title='medium 640, 640 on longest side'>
         z
       </div>
-      <div
+      {/* <div
         onClick={() => setImageType('_n')}
         title='small, 320 on longest side'>
         n
-      </div>
+      </div> */}
     </div>
   );
 };
