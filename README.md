@@ -4,7 +4,7 @@ Using ReactJS, create a simple single page application that shows a google map, 
 
 ## clone this repository
 
-- open terminal and type - `git clone https://github.com/mohitsinghnegi1/LBB-Assessment.git`
+- Open terminal and type - `git clone https://github.com/mohitsinghnegi1/LBB-Assessment.git`
 
 ## go to root directiory and install node packages
 
