@@ -93,4 +93,8 @@ input {
     margin-bottom: 40px !important;
     padding-left: 10px;
   }
+  .gallary-img {
+    margin: 5px;
+    max-width: 48vw;
+  }
 }

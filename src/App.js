@@ -65,7 +65,7 @@ const App = () => {
 
   return (
     <div className='container mt-4 '>
-      <h4 className=' mb-4 title text-center '>
+      <h4 className=' mb-4 text-white text-center '>
         <i class='fa fa-hand-o-right pr-3 text-warning' aria-hidden='true'></i>
         Drop a marker and see public images that have been taken at that
         location{' '}
