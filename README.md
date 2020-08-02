@@ -25,9 +25,9 @@ Using ReactJS, create a simple single page application that shows a google map, 
 
 ![Alt text](src/images/google-map.png?raw=true 'Google Map Integration')
 
-![Alt text](src\images\search-by-value-and-type.png?raw=true 'Search By Value and Type')
+![Alt text](src/images/search-by-value-and-type.png?raw=true 'Search By Value and Type')
 
-![Alt text](src\images\searver-side-pagination.png?raw=true 'Server Side Pagination')
+![Alt text](src/images/searver-side-pagination.png?raw=true 'Server Side Pagination')
 
-![Alt text](src\images\zoom-and-download.png?raw=true 'Zoom and Download Feature')
+![Alt text](src/images/zoom-and-download.png?raw=true 'Zoom and Download Feature')
 
