@@ -20,4 +20,14 @@ Using ReactJS, create a simple single page application that shows a google map, 
 - `npm start`
 - By default project will run on localhost 3000
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
+## Screenshots
+
+![Alt text](src\images\google-map.png?raw=true 'Google Map Integration')
+
+![Alt text](src\images\search-by-value-and-type.png?raw=true 'Search By Value and Type')
+
+![Alt text](src\images\searver-side-pagination.png?raw=true 'Server Side Pagination')
+
+![Alt text](src\images\zoom-and-download.png?raw=true 'Zoom and Download Feature')
+
