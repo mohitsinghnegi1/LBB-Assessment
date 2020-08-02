@@ -20,7 +20,7 @@ Using ReactJS, create a simple single page application that shows a google map, 
 - `npm start`
 - By default project will run on localhost 3000
 
-## Features
+## Features:
 
 1. Intigrate a google map using google map API
 2. Allows the user to drop a pin and see (public) images that have been taken at that location.
@@ -28,14 +28,14 @@ Using ReactJS, create a simple single page application that shows a google map, 
 4. Mobile first + responsive
 5. Support server side pagination
 
-## Additional Features Added:
+## Additional Features:
 
 1. Search photos by adding longitude and latitude in input fields.
 2. Zoom on hover and download or view full image by simply clicking on it.
 3. Show image as a square image, thumbnail, or in different sizes.
 4. Hosted this Assessment on Heroku
 
-## Screenshots
+## Screenshots:
 
 # Google Map integration
 
