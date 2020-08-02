@@ -23,7 +23,7 @@ Using ReactJS, create a simple single page application that shows a google map, 
 
 ## Screenshots
 
-![Alt text](src\images\google-map.png?raw=true 'Google Map Integration')
+![Alt text](src/images/google-map.png?raw=true 'Google Map Integration')
 
 ![Alt text](src\images\search-by-value-and-type.png?raw=true 'Search By Value and Type')
 
